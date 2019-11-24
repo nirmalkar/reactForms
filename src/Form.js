@@ -120,19 +120,6 @@ export default class Form extends Component {
             </div>
           </div>
         </div>
-
-
-
-        {/* <form onSubmit={this.handleSubmit}>
-          <label htmlFor="username">Username</label>
-          <input type="text" id='username' placeholder='Username' name='username' value={this.state.username} onChange={this.handleChange} />
-          <label htmlFor="email">Email</label>
-          <input type="text" id='email' placeholder='Email' name='email' value={this.state.email} onChange={this.handleChange} />
-          <label htmlFor="password">Password</label>
-          <input type="text" id='password' placeholder='Password' name='password' value={this.state.password} onChange={this.handleChange} />
-
-          <button>submit</button>
-        </form> */}
       </div>
     )
   }
