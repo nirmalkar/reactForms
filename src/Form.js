@@ -10,7 +10,7 @@ export default class Form extends Component {
       email: '',
       location: '',
       password: '',
-      phoneNumber: +12344566
+      phoneNumber: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -76,7 +76,7 @@ export default class Form extends Component {
             <div className='container'>
               <div className="row offset-md-2 offset-lg-4">
                 <div className="col col-md-8 col-lg-6 ml-md-5">
-                  <form>
+                  <form onSubmit={this.handleSubmit}>
                     <div className="form-row text-left">
                       <div className="form-group col-md-12">
                         <label htmlFor="email">*Email Address:</label>
@@ -110,7 +110,7 @@ export default class Form extends Component {
                     <div className="form-row text-left">
                       <div className="form-group col-md-12">
                         <label htmlFor="phoneNumber">*Phone Number:</label>
-                        <input onChange={this.handleChange} value={this.state.phoneNumber} name='user[phoneNumber]' type="text" className="form-control" id="phoneNumber" placeholder="Phone Number" />
+                        <input onChange={this.handleChange} value={this.state.phoneNumber} name='phoneNumber' type="number" className="form-control" id="phoneNumber" placeholder="Phone Number" />
                       </div>
                     </div>
                     <button type="submit" className="btn btn-outline-primary">Sign Up</button>
