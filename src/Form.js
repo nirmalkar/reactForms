@@ -31,8 +31,6 @@ export default class Form extends Component {
     return (
       <div>
         <h1>Forms</h1>
-
-
         <div className="row no-gutters navbar-margin mt-5">
           <div className="col-6"></div>
           <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -49,7 +47,7 @@ export default class Form extends Component {
             <div className='container'>
               <div className="row offset-md-2 offset-lg-4 ">
                 <div className="col col-md-8 col-lg-6 ml-md-5">
-                  <form action='/' method='POST' onSubmit={this.handleSubmit}>
+                  <form onSubmit={this.handleSubmit}>
                     <div className="form-row text-left">
                       <div className="form-group col-md-12">
                         <label htmlFor="username">Username</label>
@@ -110,7 +108,7 @@ export default class Form extends Component {
                     <div className="form-row text-left">
                       <div className="form-group col-md-12">
                         <label htmlFor="phoneNumber">*Phone Number:</label>
-                        <input onChange={this.handleChange} value={this.state.phoneNumber} name='phoneNumber' type="number" className="form-control" id="phoneNumber" placeholder="Phone Number" />
+                        <input onChange={this.handleChange} value={this.state.phoneNumber} name='phoneNumber' type="tel" className="form-control" id="phoneNumber" placeholder="Phone Number" />
                       </div>
                     </div>
                     <button type="submit" className="btn btn-outline-primary">Sign Up</button>
